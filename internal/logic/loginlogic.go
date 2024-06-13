@@ -30,6 +30,6 @@ func (l *LoginLogic) Login(in *user.LoginRequest) (*user.LoginResponse, error) {
 	return &user.LoginResponse{
 		Code: 0,
 		Msg:  "登陆成功",
-		Data: fmt.Sprintf("登录的用户名为…%v,密码为%v", in.Username, in.Password),
+		Data: fmt.Sprintf("登录的用户名为%v,密码为%v", in.Username, in.Password),
 	}, nil
 }
